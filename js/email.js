@@ -1,3 +1,4 @@
+alert('in email.js');
 $('#submit').click(function(){
   alert('HERE');
   jQuery.ajax({
