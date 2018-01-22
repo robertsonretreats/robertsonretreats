@@ -1,13 +1,15 @@
 alert('in email.js');
-$('#submit').click(function(){
-  alert('HERE');
-  jQuery.ajax({
-      type: "POST",
-      url: 'email.php',
-      dataType: 'json',
+$(document).ready(function() {
+  $('#submit').click(function(){
+    alert('HERE');
+    jQuery.ajax({
+        type: "POST",
+        url: 'email.php',
+        dataType: 'json',
 
-      success: function (obj, textstatus) {
-                    
-              }
+        success: function (obj, textstatus) {
+
+                }
+    });
   });
 });
